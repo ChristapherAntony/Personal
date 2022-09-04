@@ -19,7 +19,7 @@ function validateName() {
         return false
 
     }
-    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {  // condition for checking full name or not 
+    if (!name.match(/(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/)) {  // condition for checking full name or not 
         nameError.innerHTML = 'write full name'    // assiging the error message to nameError variable
         return false
 
